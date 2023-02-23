@@ -1,0 +1,45 @@
+        .containerForm{
+            background-color:white;
+            align-items: center;
+        }
+		form {
+			width: 400px;
+			margin: 0 auto;
+			text-align: center;
+		}
+		label {
+			/* display: block; */
+			margin-right: 10px;
+		}
+		input[type="text"], input[type="password"] {
+			padding: 5px;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			width: 200px;
+			margin-right: 10px;
+		
+        }
+		input[type="submit"] {
+			padding: 5px 20px;
+			background-color:#287575;
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+            size:large;
+			cursor: pointer;
+		}
+        
+        button {
+            width: 216px;
+            height: 26px;
+            background-color: #287575;
+            border-radius: 7px;
+            content: fill;
+        }
+
+
+
+		.signup-link {
+			display: inline-block;
+			margin-top: 10px;
+		}
