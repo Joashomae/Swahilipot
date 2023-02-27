@@ -1,0 +1,61 @@
+/* Styles for the Swahilipot sign-up page */
+
+/* Container form styles */
+.containerForm {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+
+/* Heading styles */
+h1, h4 {
+    text-align: center;
+}
+
+h1 {
+    color: #287575;
+}
+
+/* Form input styles */
+form {
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e6e6e6;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #287575;
+    color: white;
+    cursor: pointer;
+}
+
+.signup-link {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.signup-link a {
+    color: #287575;
+    font-weight: bold;
+    text-decoration: none;
+}
