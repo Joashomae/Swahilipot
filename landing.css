@@ -1,0 +1,74 @@
+
+  .social-media-icons {
+    width: 100%;
+    text-align:center;
+
+  }
+  .social-media-icon {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    margin: 5px;
+    justify-content:space-between;
+    text-align: center;
+    display: -ms-flexbox;
+    flex-direction:row;
+  }
+  .facebook {
+    background: url('C:\Users\joash\OneDrive\Desktop\space booking\asserts\facebook.jfif');
+  }
+  .twitter {
+    background: url('C:\Users\joash\OneDrive\Desktop\space booking\asserts\twitter.jfif');
+  }
+  .container4{
+    justify-content:space-between;
+    text-align: center;
+    display: -ms-flexbox;
+    flex-direction:row;
+  }
+  nav ul{
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-decoration:none;
+  }
+  li{
+    list-style: none;
+  }
+  nav li{
+    float: right;
+    font-size: 1.2em;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 200;
+    border-bottom: 20px;
+    padding: 20px;
+    text-decoration:none;
+  }
+
+nav a{
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+}
+nav a:hover,a:active{
+  background-color: aqua;
+}
+nav a:visited{
+  color: blueviolet;
+}
+  .active{
+    text-decoration:none;
+  }
+   body{
+    background-color:#4BC088;
+  }
+  .logo{
+    text-align:center;
+    font-size: large;
+  }
+  button{
+    font-size: larger;
+    color: blue;
+    background-color: green;
+  }

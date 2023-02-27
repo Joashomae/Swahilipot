@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	
 	<title>Login Form</title>
 	<style>
         *{
@@ -8,8 +9,11 @@
             padding: 0%;
             box-sizing: border-box;
         }
-        .containerForm{
-            background-color:white;
+        .outer-container{
+            background-color:rgb(108, 113, 114);
+			width: 50vw;
+			min-height: 100px;
+			margin:0 auto;
         }
 		form {
 			width: 400px;
@@ -51,11 +55,17 @@
 			display: inline-block;
 			margin-top: 10px;
 		}
+
+		#inner-container{
+            position: absolute;
+       }
+
 	</style>
 </head>
 <body>
-    <div class="containerForm">
-            <form>
+    <div class="outer-container">
+		<div class="inner-container">
+			<form>
                 <h1>Login</h1>
                 <label for="username">Username:</label>
                 <input type="text" id="username" name="username" placeholder="Enter Username" required><br><br>
@@ -63,6 +73,16 @@
                 <input type="password" id="password" name="password" placeholder="Enter Password" required><br><br>
                 <button type="submit">Login</button><br>
                 <p class="signup-link">Don't have an account? <a href="#" style="color: #287575">Sign up</a></p>
+     
+				<div id="outer-container">
+				<a href="">forgot password</a>
+		</div>
+	 </div>
+	 
+           
+				  </div>
+				  
+
             </form>
     </div>
 </body>
