@@ -2,68 +2,21 @@
 <html>
 <head>
 	<title>Login Form</title>
-	<style>
-        *{
-            margin: 0%;
-            padding: 0%;
-            box-sizing: border-box;
-        }
-        .containerForm{
-            background-color:white;
-        }
-		form {
-			width: 400px;
-			margin: 0 auto;
-			text-align: center;
-		}
-		label {
-			/* display: block; */
-			margin-right: 10px;
-		}
-		input[type="text"], input[type="password"] {
-			padding: 5px;
-			border-radius: 5px;
-			border: 1px solid #ccc;
-			width: 200px;
-			margin-right: 10px;
-		}
-		input[type="submit"] {
-			padding: 5px 20px;
-			background-color:#287575;
-			color: #fff;
-			border: none;
-			border-radius: 5px;
-            size:large;
-			cursor: pointer;
-		}
-        
-        button {
-            width: 216px;
-            height: 26px;
-            background-color: #287575;
-            border-radius: 7px;
-            content: fill;
-        }
-
-
-
-		.signup-link {
-			display: inline-block;
-			margin-top: 10px;
-		}
-	</style>
+	<link rel="stylesheet" href="login.css">
+    <script src="login.js"></script>
 </head>
 <body>
     <div class="containerForm">
-            <form>
-                <h1>Login</h1>
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" placeholder="Enter Username" required><br><br>
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" placeholder="Enter Password" required><br><br>
-                <button type="submit">Login</button><br>
-                <p class="signup-link">Don't have an account? <a href="#" style="color: #287575">Sign up</a></p>
-            </form>
+        <form onsubmit="return validateForm()">
+            <h1>Login</h1>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter Username" required><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter Password" required><br><br>
+            <button type="submit">Login</button><br>
+            <p class="signup-link">Don't have an account? <a href="#" style="color: #287575">Sign up</a></p>
+            
+        </form>
     </div>
 </body>
 </html>

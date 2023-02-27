@@ -1,51 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Swahilipot</title>
-        <link rel="stylesheet" type="text/css" href="C:\Users\joash\OneDrive\Desktop\space booking\booking.css">
+	<title>Swahilipot Spaces</title>
+  <link rel="stylesheet" href="booking.css">
+  <script src="booking.js"></script>
+	
 </head>
-</style>
 <body>
-    <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-      
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-      
-        <label for="checkin">Book from:</label>
-        <input type="date" id="checkin" name="checkin" required>
-      
-        <label for="checkout">Book upto:</label>
-        <input type="date" id="checkout" name="checkout" required>
-
-        
-      
-        <label for="space-type">Extra requirements:</label>
-        <select id="space-type" name="space-type">
-          <option value="single">water</option>
-          <option value="double">books</option>
-          <option value="suite">pens</option>
-        </select>
-      
-        <label for="space-type">PRICE:</label>
-        <select id="space-type" name="space-type">
-          <option value="community member">community member = Ksh.500</option>
-          <option value="citizen">Citizen = Ksh.10,000</option>
-          <option value="Non citizen"> Non citizen = Ksh.15,000</option>
-        </select>
-
-
-
-        <label for="comments"> Comments&Any other requirements:</label>
-        <textarea id="comments" name="comments"></textarea>
-      
-        <button type="submit">Book Space</button>
-        <button type="cancel">Cancel</button>
-      </form>
-      
+<label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+  
+    <label for="checkin">Book from:</label>
+    <input type="date" id="checkin" name="checkin" required>
+  
+    <label for="checkout">Book upto:</label>
+    <input type="date" id="checkout" name="checkout" required>
+  
+    <label for="space-type">Extra requirements:</label>
+    <select id="space-type" name="space-type">
+      <option value="single">water</option>
+      <option value="double">books</option>
+      <option value="suite">pens</option>
+    </select>
+  
+    <label for="price">PRICE:</label>
+    <select id="price" name="price">
+      <option value="community member">community member = Ksh.500</option>
+      <option value="citizen">Citizen = Ksh.10,000</option>
+      <option value="non-citizen">Non citizen = Ksh.15,000</option>
+    </select>
+  
+    <label for="comments"> Comments &amp; Any other requirements:</label>
+    <textarea id="comments" name="comments"></textarea>
+  
+    <button type="submit" id="submit-btn">Book Space</button>
+    <button type="button" id="cancel-btn">Cancel</button>
+  </form>
 </body>
 </html>
