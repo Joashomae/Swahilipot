@@ -1,97 +1,42 @@
-<<<<<<< HEAD:log in.html
-<!DOCTYPE html>
-<html>
-<head>
-	
-	<title>Login Form</title>
-	<style>
-=======
-
->>>>>>> 35870cfb9f954c1efdcb79d400627fe6e077bd9c:index.css/booking.css
-        *{
-            margin: 0%;
-            padding: 0%;
-            box-sizing: border-box;
-        }
-        .outer-container{
-            background-color:rgb(108, 113, 114);
-			width: 50vw;
-			min-height: 100px;
-			margin:0 auto;
-        }
-		form {
-			width: 400px;
-			margin: 0 auto;
-			text-align: center;
-		}
-		label {
-			/* display: block; */
-			margin-right: 10px;
-		}
-		input[type="text"], input[type="password"] {
-			padding: 5px;
-			border-radius: 5px;
-			border: 1px solid #ccc;
-			width: 200px;
-			margin-right: 10px;
-		}
-		input[type="submit"] {
-			padding: 5px 20px;
-			background-color:#287575;
-			color: #fff;
-			border: none;
-			border-radius: 5px;
-            size:large;
-			cursor: pointer;
-		}
-        
-        button {
-            width: 216px;
-            height: 26px;
-            background-color: #287575;
-            border-radius: 7px;
-            content: fill;
-        }
-
-
-
-		.signup-link {
-			display: inline-block;
-			margin-top: 10px;
-		}
-<<<<<<< HEAD:log in.html
-
-		#inner-container{
-            position: absolute;
-       }
-
-	</style>
-</head>
-<body>
-    <div class="outer-container">
-		<div class="inner-container">
-			<form>
-                <h1>Login</h1>
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" placeholder="Enter Username" required><br><br>
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" placeholder="Enter Password" required><br><br>
-                <button type="submit">Login</button><br>
-                <p class="signup-link">Don't have an account? <a href="#" style="color: #287575">Sign up</a></p>
-     
-				<div id="outer-container">
-				<a href="">forgot password</a>
-		</div>
-	 </div>
-	 
-           
-				  </div>
-				  
-
-            </form>
-    </div>
-</body>
-</html>
-=======
-	
->>>>>>> 35870cfb9f954c1efdcb79d400627fe6e077bd9c:index.css/booking.css
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 50px;
+  }
+  
+  label {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: bold;
+  }
+  
+  input,
+  select,
+  textarea {
+	margin-bottom: 15px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	width: 300px;
+	font-size: 16px;
+  }
+  
+  select {
+	width: 320px;
+  }
+  
+  button {
+	padding: 10px 20px;
+	margin-top: 20px;
+	border: none;
+	border-radius: 5px;
+	background-color: #007bff;
+	color: #fff;
+	font-size: 16px;
+	cursor: pointer;
+  }
+  
+  button[type="cancel"] {
+	background-color: #
+  }

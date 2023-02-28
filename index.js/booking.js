@@ -1,19 +1,24 @@
-// Get the form element
-const bookingForm = document.getElementById("booking-form");
-
-// Add an event listener to the submit button
-const submitBtn = document.getElementById("submit-btn");
-submitBtn.addEventListener("click", (event) => {
-    event.preventDefault(); // Prevent form from submitting
-    // Get the form data
-    const formData = new FormData(bookingForm);
-    // Do something with the form data, like send it to a server
-    console.log(formData);
-});
-
-// Add an event listener to the cancel button
-const cancelBtn = document.getElementById("cancel-btn");
-cancelBtn.addEventListener("click", () => {
-    // Reset the form
-    bookingForm.reset();
-});
+const form = document.querySelector('form');
+    form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const formData = new FormData(form);
+        const name = formData.get('name');
+        const email = formData.get('email');
+        const checkin = formData.get('checkin');
+        const timeFrom = formData.get('time-from');
+        const timeTo = formData.get('time-to');
+        const checkout = formData.get('checkout');
+        const spaceType = formData.get('space-type');
+        const price = formData.get('price');
+        const comments = formData.get('comments');
+        console.log(`
+            Name: ${name}
+            Email: ${email}
+            Book from: ${checkin} at ${timeFrom}
+            Book upto: ${checkout} at ${timeTo}
+            Extra requirements: ${spaceType}
+            Price: ${price}
+            Any other comments: ${comments}
+        `);
+        form.reset();
+    });
