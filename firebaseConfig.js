@@ -1,15 +1,15 @@
  // Your web app's Firebase configuration
- var firebaseConfig = {
-    apiKey: "YOUR_API_KEY",
-    authDomain: "YOUR_AUTH_DOMAIN",
-    databaseURL: "YOUR_DATABASE_URL",
-    projectId: "YOUR_PROJECT_ID",
-    storageBucket: "YOUR_STORAGE_BUCKET",
-    messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-    appId: "YOUR_APP_ID",
-    measurementId: "YOUR_MEASUREMENT_ID"
-};
-
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+    apiKey: "AIzaSyDuGWfPkNBXvP8qmdLEz7aapriQKew8ia0",
+    authDomain: "space-booking-cde6f.firebaseapp.com",
+    projectId: "space-booking-cde6f",
+    storageBucket: "space-booking-cde6f.appspot.com",
+    messagingSenderId: "156678286921",
+    appId: "1:156678286921:web:fcb21de4955b9fae2a1998",
+    measurementId: "G-G0NS44B08F"
+  };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 firebase.analytics();
