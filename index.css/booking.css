@@ -1,42 +1,73 @@
 form {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-top: 50px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color:gray;
   }
   
   label {
-	display: block;
-	margin-bottom: 5px;
-	font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
   }
   
-  input,
+  input[type="text"],
+  input[type="email"],
+  input[type="date"],
+  input[type="time"],
   select,
   textarea {
-	margin-bottom: 15px;
-	padding: 10px;
-	border: 1px solid #ccc;
-	border-radius: 5px;
-	width: 300px;
-	font-size: 16px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
   }
   
   select {
-	width: 320px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%23333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 20px;
   }
   
-  button {
-	padding: 10px 20px;
-	margin-top: 20px;
-	border: none;
-	border-radius: 5px;
-	background-color: #007bff;
-	color: #fff;
-	font-size: 16px;
-	cursor: pointer;
+  textarea {
+    height: 150px;
   }
   
-  button[type="cancel"] {
-	background-color: #
+  button[type="submit"],
+  button[type="reset"] {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: blue;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
   }
+  
+  button[type="submit"]:hover,
+  button[type="reset"]:hover {
+    background-color: #555;
+  }
+  button[type="submit"], button[type="reset"] {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: green;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+ 
