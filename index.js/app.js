@@ -22,4 +22,44 @@ const analytics = getAnalytics(app);
 var formMessage = firebase.database().ref('signup');
 
 //listen to submit event
-document.getElementById()
+document.getElementById('signup').addEventListener('submit',formSubmit);
+
+//submit form()
+function formSubmit(e){
+  e.preventDefault();
+
+ //Get values from DOM
+ var username = getElementVal('username'); 
+ var email = getElementVal('email'); 
+ var password = getElementVal('password'); 
+ var confirmPassword = getElementVal('confirmPassword');  
+}
+ console.log(username, email, password , confirmPassword);
+
+ sendMessage(username, email, password , confirmPassword);
+
+ //show aaaAlert Message()
+ document.querySelector('.alert').getElementsByClassName.display = 'block';
+  
+ //Hide Alert messsage after 7 seconds()
+ setTimeout(() =>{
+  document.querySelector('.alert').getElementsByClassName.display = 'none';
+ }, 3000);
+
+ //Form Reset After Submissin()
+ document.getElementById('signup').reset();
+
+ //Send Message Values
+ const sendMessage = (username, email, password, confirmPassword) =>{
+  var newFormMessage = formMessage.push();
+
+  newFormMessage.set({
+    username : username,
+    email: email,
+    password: password,
+    confirmPassword :confirmPassword
+  });
+}
+const getElementVal = (id) =>{
+  return document.getElementById(id).value;
+};

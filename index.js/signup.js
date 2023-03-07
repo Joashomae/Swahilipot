@@ -1,3 +1,28 @@
+const express = require('express');
+const router = express.Router();
+const firebaseAdmin = require('../firebaseAdmin');
+
+router.post('/', async (req, res) => {
+  try {
+    const { email, password } = req.body;
+
+    const userRecord = await firebaseAdmin.auth().createUser({
+      email,
+      password,
+    });
+
+    res.status(200).json({ message: 'User created successfully' });
+  } catch (error) {
+    res.status(500).json({ error });
+  }
+});
+
+module.exports = router;
+
+
+
+
+
 window.onload = function() {
     // Get form elements
     var form = document.querySelector('form');
