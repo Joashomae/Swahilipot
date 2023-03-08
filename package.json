@@ -1,15 +1,16 @@
 {
   "name": "swahilipot-hub",
   "version": "1.0.0",
-  "description": "",
+  "description": "Work and activites from swahilipot  This project is to help solve problems in managing and booking spaces available at Swahilipot.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "author": "",
+  "author": "jesse",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.18.2",
     "firebase": "^9.17.2",
     "firestore": "^1.1.6"
   }
