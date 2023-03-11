@@ -1,3 +1,17 @@
+// js/booking.js
+
+const { firebase } = require('./index');
+
+function fetchSpaces(callback) {
+  const spacesRef = firebase.database().ref('spaces');
+  spacesRef.on('value', (snapshot) => {
+    const spaces = snapshot.val();
+    callback(spaces);
+  });
+}
+
+module.exports.fetchSpaces = fetchSpaces;
+
 const form = document.querySelector('form');
     form.addEventListener('submit', (event) => {
         event.preventDefault();
