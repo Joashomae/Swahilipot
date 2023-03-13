@@ -1,0 +1,25 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "username": "christopher",
+            "password": "123456789"
+        }
+    ],
+    "space": [
+        {
+            "id": 1,
+            "name": "Hall",
+            "description": "Hall",
+            "price": 1000,
+            "capacity": 100
+        },
+        {
+            "name": "Boardroom",
+            "description": "This is a Boardroom",
+            "price": 522,
+            "capacity": 25,
+            "id": 2
+        }
+    ]
+}
