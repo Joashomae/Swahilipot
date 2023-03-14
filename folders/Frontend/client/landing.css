@@ -1,0 +1,163 @@
+/* Styles for the navigation bar */
+nav {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  .logo {
+    margin-right: auto;
+  }
+  
+  /* Styles for the main content */
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #f2f2f2;
+    color: #333;
+  }
+  
+  .container2 {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .container2 p {
+    margin: 0;
+  }
+  
+  .container2 a {
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  .container2 a:hover {
+    background-color: #444;
+  }
+  
+  .container3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .container3 img {
+    max-width: 100%;
+  }
+  
+  .container4 {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+  }
+  
+  .container4 p {
+    font-weight: bold;
+    font-size: 24px;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .container4  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+  
+  /* Styles for the social media icons */
+  .social-media-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+  }
+  .social-media-icons a {
+    margin: 0 10px;
+  }
+  
+  .social-media-icons img {
+    width: 42px;
+    height: 42px;
+  }
+  /* Center align logo */
+.logo {
+    text-align: center;
+  }
+  
+  /* Move navigation bar to top right corner */
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 80px;
+    background-color: #333;
+    color: #fff;
+    padding: 0 20px;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .LOG{
+    background-color: blue;
+    font-size: larger;
+    border-radius:5px;
+  }
+  p {
+    text-align: center;
+  }
+  button[type="cancel"] {
+    font-size: 20px;
+  }
+  
