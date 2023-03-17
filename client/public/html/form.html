@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Space Booking</title>
+	<link rel="stylesheet" type="text/css" href="/folders/Frontend/client/components/css/form.css">
+</head>
+<body>
+	<header>
+		<h1>Space Booking</h1>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Spaces</a></li>
+			<li><a href="#">Bookings</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</nav>
+	<main>
+		<h2>Welcome to Space Booking</h2>
+		<p id="transform-text">Want a <span class="multiple-text"></span></p1>
+		<p id="booking-text">Book your space online!</p2>
+		<form>
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" required>
+			<br>
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required>
+			<br>
+			<label for="phone">Phone:</label>
+			<input type="tel" id="phone" name="phone" required>
+			<br>
+			<label for="date">Date:</label>
+			<input type="date" id="date" name="date" required>
+			<br>
+			<label for="time">Time:</label>
+			<input type="time" id="time" name="time" required>
+			<br>
+			<label for="space">Space:</label>
+			<select id="space" name="space" required>
+				<option value="">--Select a space--</option>
+				<option value="room1">Co-Working Space</option>
+				<option value="room2">Conference Room/Boardroom</option>
+				<option value="room3">Hall</option>
+				<option value="room4">Ampitheatre</option>
+			</select>
+			<br>
+			<label for="message">Message:</label>
+			<textarea id="message" name="message"></textarea>
+			<br>
+			<input type="submit" value="Book Now">
+		</form>
+	</main>
+	<footer>
+		<p>&copy; 2023 Space Booking. All rights reserved.</p>
+	</footer>
+</body>
+</html>
+
+<script src="/folders/Frontend/client/src/form.js"></script>
