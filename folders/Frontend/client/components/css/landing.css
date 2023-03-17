@@ -1,163 +1,237 @@
-/* Styles for the navigation bar */
-nav {
-    background-color: #333;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-  }
-  
-  nav ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav li {
-    margin-right: 20px;
-  }
-  
-  nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  nav a:hover {
-    text-decoration: underline;
-  }
-  
-  .logo {
-    margin-right: auto;
-  }
-  
-  /* Styles for the main content */
-  body {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    background-color: #f2f2f2;
-    color: #333;
-  }
-  
-  .container2 {
-    background-color: white;
-    padding: 20px;
-    margin: 20px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .container2 p {
-    margin: 0;
-  }
-  
-  .container2 a {
-    background-color: #333;
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-  }
-  
-  .container2 a:hover {
-    background-color: #444;
-  }
-  
-  .container3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0;
-  }
-  
-  .container3 img {
-    max-width: 100%;
-  }
-  
-  .container4 {
-    background-color: white;
-    padding: 20px;
-    margin: 20px 0;
-  }
-  
-  .container4 p {
-    font-weight: bold;
-    font-size: 24px;
-    margin: 0;
-    text-align: center;
-  }
-  
-  .container4  {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
 }
 
-  
-  /* Styles for the social media icons */
-  .social-media-icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #333;
-    color: white;
-    padding: 20px;
-  }
-  .social-media-icons a {
-    margin: 0 10px;
-  }
-  
-  .social-media-icons img {
-    width: 42px;
-    height: 42px;
-  }
-  /* Center align logo */
+body {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #ffffff;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 10px 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 99;
+}
+
 .logo {
-    text-align: center;
-  }
-  
-  /* Move navigation bar to top right corner */
-  nav {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    height: 80px;
-    background-color: #333;
-    color: #fff;
-    padding: 0 20px;
-  }
-  
-  nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-  }
-  
-  nav li {
-    margin: 0 10px;
-  }
-  
-  nav a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-  }
-  .LOG{
-    background-color: blue;
-    font-size: larger;
-    border-radius:5px;
-  }
-  p {
-    text-align: center;
-  }
-  button[type="cancel"] {
-    font-size: 20px;
-  }
-  
+	font-size: 1.5em;
+	color: #42345a;
+	user-select: none;
+	background: transparent;
+}
+
+.navigation a {
+	position: relative;
+	font-size: 1.1em;
+	color: #4070F4;
+	text-decoration: none;
+	font-weight: 500;
+	margin-left: 40px;
+}
+
+.navigation a::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -6px;
+	width: 100%;
+	height: 3px;
+	background: #270263;
+	border-radius: 5px;
+	transform-origin: right;
+	transform: scaleX(0);
+	transition: transform .5s;
+
+}
+
+.navigation a:hover::after {
+	transform-origin: left;
+	transform: scaleX(1);
+}
+
+.navigation .btnLogin-popup {
+	width: 130px;
+	height: 50px;
+	background: transparent;
+	border: 2px solid #4070F4;
+	outline: none;
+	border-radius: 6px;
+	cursor: pointer;
+	font-size: 1.1em;
+	color: #4070F4;
+	font-weight: 500;
+	margin-left: 40px;
+	transition: .5s;
+}
+
+.navigation .btnLogin-popup:hover {
+	background: #333;
+	color: #ffffff;
+}
+
+.slide-container {
+	max-width: 1120px;
+	width: 100%;
+	padding: 40px 0;
+}
+
+.slide-content {
+	margin: 0 50px;
+	overflow: hidden;
+	border-radius: 25px;
+}
+
+.card {
+	border-radius: 25px;
+	background-color: #dfdfdf;
+}
+
+.image-content,
+.card-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 10px 14px;
+}
+
+.image-content {
+	position: relative;
+	row-gap: 5px;
+	padding: 25px 0;
+}
+
+.overlay {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #4070F4;
+	border-radius: 25px 25px 0 25px;
+}
+
+.overlay::before,
+.overlay::after {
+	content: '';
+	position: absolute;
+	right: 0;
+	bottom: -40px;
+	height: 40px;
+	width: 40px;
+	background-color: #4070F4;
+}
+
+.overlay::after {
+	border-radius: 0 25px 0 0;
+	background-color: #dfdfdf;
+}
+
+.card-image {
+	position: relative;
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+	background: #FFF;
+	padding: 3px;
+}
+
+.card-image .card-img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	border-radius: 50%;
+	border: 4px solid #4070F4;
+}
+
+.name {
+	font-size: 18px;
+	font-weight: 500;
+	color: #333;
+}
+
+.description {
+	font-size: 14px;
+	color: #707070;
+	text-align: center;
+}
+
+.button {
+	border: none;
+	font-size: 16px;
+	color: #FFF;
+	padding: 8px 16px;
+	background-color: #4070F4;
+	border-radius: 6px;
+	margin: 14px;
+	cursor: pointer;
+	transition: all 0.5s ease;
+}
+
+.button:hover {
+	background: #265DF2;
+}
+
+.swiper-navBtn {
+	color: #6E93f7;
+	transition: color 0.3s ease;
+}
+
+.swiper-navBtn:hover {
+	color: #4070F4;
+}
+
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+	font-size: 35px;
+}
+
+.swiper-button-next {
+	right: 0;
+}
+
+.swiper-button-prev {
+	left: 0;
+}
+
+.swiper-pagination-bullet {
+	background-color: #6E93f7;
+	opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+	background-color: #4070F4;
+}
+
+@media screen and (max-width: 768px) {
+	.slide-content {
+		margin: 0 10px;
+	}
+
+	.swiper-navBtn {
+		display: none;
+	}
+}
+
+.bookNow {
+	position: fixed;
+  	bottom: 10px;
+  	left: 50%;
+  	transform: translateX(-50%);
+	text-decoration: none;
+	color: red;
+}
