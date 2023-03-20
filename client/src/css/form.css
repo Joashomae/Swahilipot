@@ -152,3 +152,25 @@ p span {
     color: aqua;
     font-weight: bold;
 }
+.multiple-text {
+    position: relative;
+    animation-name: blink;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes blink {
+    0% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.5;
+      transform: scale(1.2);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
