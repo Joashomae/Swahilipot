@@ -152,25 +152,46 @@ p span {
     color: aqua;
     font-weight: bold;
 }
-.multiple-text {
-    position: relative;
-    animation-name: blink;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
+.multiple-text:after {
+    content: "";
+    animation: autowrite 4s steps(20) forwards;
+    animation-delay: 1s;
+}
+
+.multiple-text:before {
+    content: "Hall";
+    display: inline-block;
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: autodelete 2s steps(20) forwards;
+    animation-delay: 5s;
+}
+#booking-text {
+    animation: flash 1s infinite;
   }
   
-  @keyframes blink {
-    0% {
-      opacity: 1;
-      transform: scale(1);
-    }
+  @keyframes flash {
     50% {
       opacity: 0.5;
-      transform: scale(1.2);
-    }
-    100% {
-      opacity: 1;
-      transform: scale(1);
     }
   }
   
+
+@keyframes autowrite {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes autodelete {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 0;
+    }
+}
