@@ -19,22 +19,23 @@ router.get('/spaces/:id', (req, res) => {
 
 // Book a space
 router.post('/bookings', (req, res) => {
-    const db = new jsondb('db.json', true, true); // create or load the bookings database
-    const bookings = db.getData('/');
-  
-    // Create a new booking object with the data from the request body
-    const newBooking = {
-      id: bookings.length + 1,
-      spaceId: req.body.spaceId,
-      startDate: req.body.startDate,
-      endDate: req.body.endDate,
-      status: 'booked',
-    };
-  
-    // Add the new booking to the database
-    db.push(`/${newBooking.id}`, newBooking);
-  
-    // Send a response with the new booking object
-    res.json(newBooking);
-  });
-  
+  const db = new jsondb('data/db.json', true, true); // create or load the bookings database
+  const bookings = db.getData('/');
+
+  // Create a new booking object with the data from the request body
+  const newBooking = {
+    id: bookings.length + 1,
+    spaceId: req.body.spaceId,
+    startDate: req.body.startDate,
+    endDate: req.body.endDate,
+    status: 'booked',
+  };
+
+  // Add the new booking to the database
+  db.push(`/${newBooking.id}`, newBooking);
+
+  // Send a response with the new booking object
+  res.json(newBooking);
+});
+
+module.exports = router;
