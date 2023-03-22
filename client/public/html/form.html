@@ -20,7 +20,7 @@
 		<h2>Welcome to Space Booking</h2>
 		<p id="transform-text">Want a <span class="multiple-text"></span></p1>
 		<p id="booking-text">Book your space online!</p2>
-		<form>
+		<form action = "book-now.php" method="POST" onsubmit="alert('Space suceessfully booked!');window.location.href='thank-you.php';return false;">
 			<label for="name">Name:</label>
 			<input type="text" id="name" name="name" required>
 			<br>
